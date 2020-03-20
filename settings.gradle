@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        maven {
+            url "${nexus_url_dev}/repository/maven-releases"
+        }
+        gradlePluginPortal()
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+}
+
+gradle.ext.serviceName = "gradle-capsule-plugin"
+
+//rootProject.name = "gradle-capsule-plugin"
